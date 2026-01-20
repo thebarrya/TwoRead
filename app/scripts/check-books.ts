@@ -1,12 +1,16 @@
 import { createClient } from '@supabase/supabase-js';
-
-const supabaseUrl = 'https://cuzxuckeixsvommxfodz.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN1enh1Y2tlaXhzdm9tbXhmb2R6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg2MzkzNjEsImV4cCI6MjA4NDIxNTM2MX0.PrWu4aoS9zlRONfK2mLXarr2eqUbQWA-8wu66pTEYJ0';
+import { SUPABASE_CONFIG } from './config';
 
 async function checkBooks() {
   console.log('🔍 Vérification de la connexion Supabase et des livres...\n');
 
-  const supabase = createClient(supabaseUrl, supabaseKey);
+  if (!SUPABASE_CONFIG.url || !SUPABASE_CONFIG.key) {
+    console.error('❌ Configuration Supabase manquante. Vérifiez vos variables d\'environnement.');
+    console.error('   Variables requises: SUPABASE_URL et SUPABASE_SERVICE_ROLE_KEY');
+    return;
+  }
+
+  const supabase = createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.key);
 
   try {
     // Test de connexion basique
