@@ -48,25 +48,31 @@ npm start
 
 Voir [DEPLOYMENT.md](./DEPLOYMENT.md) pour le guide complet de déploiement.
 
-### Déploiement rapide avec EAS
+### Configuration EAS Automatique (Recommandé)
 
 ```bash
-# Installer EAS CLI
-npm install -g eas-cli
-
-# Se connecter
-eas login
-
-# Initialiser
 cd app
-eas init
+./setup-eas-auto.sh
+```
 
-# Configurer les secrets
-eas secret:create --scope project --name EXPO_PUBLIC_SUPABASE_URL --value "votre-url"
-eas secret:create --scope project --name EXPO_PUBLIC_SUPABASE_ANON_KEY --value "votre-clé"
+Ce script configure automatiquement EAS avec tous les secrets nécessaires.
 
-# Builder
+**Alternative** : Voir [QUICK_START_EAS.md](./QUICK_START_EAS.md) pour plus d'options.
+
+### Déploiement rapide avec EAS
+
+Une fois EAS configuré :
+
+```bash
+# Builder pour Android
 eas build --platform android --profile production
+
+# Builder pour iOS
+eas build --platform ios --profile production
+
+# Soumettre aux stores
+eas submit --platform android
+eas submit --platform ios
 ```
 
 ## 🛠️ Technologies
