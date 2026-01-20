@@ -1,0 +1,231 @@
+{
+  "name": "Two Read Design System",
+  "version": "1.0",
+  "colors": {
+    "primary": {
+      "main": "#4CAF50",
+      "dark": "#2E7D32",
+      "light": "#81C784",
+      "contrast": "#FFFFFF"
+    },
+    "secondary": {
+      "orange": "#FF9800",
+      "yellow": "#FFC107",
+      "gold": "#FFD700"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "cream": "#FAFAFA",
+      "lightGrey": "#E0E0E0",
+      "grey": "#9E9E9E",
+      "darkGrey": "#616161",
+      "black": "#333333"
+    },
+    "semantic": {
+      "success": "#4CAF50",
+      "warning": "#FF9800",
+      "error": "#F44336",
+      "info": "#2196F3"
+    },
+    "reader": {
+      "light": {
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "secondary": "#666666"
+      },
+      "sepia": {
+        "background": "#F5E6D3",
+        "text": "#5C4033",
+        "secondary": "#8B7355"
+      },
+      "dark": {
+        "background": "#1A1A1A",
+        "text": "#E0E0E0",
+        "secondary": "#AAAAAA"
+      }
+    },
+    "divisions": {
+      "bronze": "#CD7F32",
+      "silver": "#C0C0C0",
+      "gold": "#FFD700"
+    },
+    "badges": {
+      "inProgress": "#FF9800",
+      "completed": "#4CAF50",
+      "beginner": "#E0E0E0",
+      "regular": "#81C784",
+      "expert": "#FFC107"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "Nunito",
+      "secondary": "Poppins",
+      "reader": {
+        "serif": "Georgia",
+        "sansSerif": "Roboto",
+        "dyslexie": "OpenDyslexic"
+      }
+    },
+    "sizes": {
+      "h1": 24,
+      "h2": 20,
+      "h3": 18,
+      "body": 16,
+      "bodySmall": 14,
+      "caption": 12,
+      "button": 16
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "readerSizes": {
+      "small": 14,
+      "medium": 16,
+      "large": 18,
+      "xlarge": 22
+    }
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "xxl": 48
+  },
+  "borderRadius": {
+    "small": 8,
+    "medium": 12,
+    "large": 16,
+    "xlarge": 24,
+    "pill": 100
+  },
+  "shadows": {
+    "card": {
+      "offset": {"x": 0, "y": 2},
+      "blur": 8,
+      "color": "rgba(0,0,0,0.1)"
+    },
+    "button": {
+      "offset": {"x": 0, "y": 4},
+      "blur": 12,
+      "color": "rgba(76,175,80,0.3)"
+    },
+    "modal": {
+      "offset": {"x": 0, "y": 8},
+      "blur": 24,
+      "color": "rgba(0,0,0,0.15)"
+    }
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "background": "#4CAF50",
+        "text": "#FFFFFF",
+        "borderRadius": 25,
+        "paddingH": 32,
+        "paddingV": 16,
+        "fontSize": 16,
+        "fontWeight": 700
+      },
+      "secondary": {
+        "background": "#FFFFFF",
+        "text": "#4CAF50",
+        "border": "#4CAF50",
+        "borderWidth": 2,
+        "borderRadius": 25,
+        "paddingH": 32,
+        "paddingV": 14
+      },
+      "tertiary": {
+        "background": "transparent",
+        "text": "#4CAF50"
+      }
+    },
+    "card": {
+      "background": "#FFFFFF",
+      "borderRadius": 16,
+      "padding": 16,
+      "shadow": "card"
+    },
+    "chip": {
+      "active": {
+        "background": "#4CAF50",
+        "text": "#FFFFFF"
+      },
+      "inactive": {
+        "background": "#FFFFFF",
+        "text": "#616161",
+        "border": "#E0E0E0"
+      },
+      "borderRadius": 20,
+      "paddingH": 16,
+      "paddingV": 8
+    },
+    "progressCircle": {
+      "size": 150,
+      "strokeWidth": 8,
+      "trackColor": "#E0E0E0",
+      "progressColor": "#4CAF50"
+    },
+    "badge": {
+      "borderRadius": 12,
+      "paddingH": 12,
+      "paddingV": 6,
+      "fontSize": 12,
+      "fontWeight": 600
+    },
+    "navBar": {
+      "height": 64,
+      "background": "#FFFFFF",
+      "activeColor": "#4CAF50",
+      "inactiveColor": "#9E9E9E",
+      "iconSize": 24,
+      "labelSize": 12
+    },
+    "input": {
+      "background": "#FFFFFF",
+      "border": "#E0E0E0",
+      "borderFocus": "#4CAF50",
+      "borderRadius": 12,
+      "padding": 16,
+      "fontSize": 16
+    }
+  },
+  "icons": {
+    "navigation": {
+      "home": "home",
+      "library": "book",
+      "community": "people",
+      "profile": "person"
+    },
+    "actions": {
+      "settings": "settings",
+      "search": "search",
+      "bookmark": "bookmark",
+      "share": "share",
+      "back": "arrow_back"
+    },
+    "gamification": {
+      "streak": "local_fire_department",
+      "trophy": "emoji_events",
+      "star": "star",
+      "calendar": "calendar_today"
+    }
+  },
+  "animations": {
+    "duration": {
+      "fast": 150,
+      "normal": 300,
+      "slow": 500
+    },
+    "easing": {
+      "default": "ease-in-out",
+      "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+    }
+  }
+}

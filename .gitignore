@@ -1,0 +1,46 @@
+# Environment files
+*.env
+.env*
+config/supabase.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.log
+
+# Expo
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Metro
+.metro-health-check*
+
+# Testing
+coverage/
+
+# Misc
+*.pem
+*.lockb
